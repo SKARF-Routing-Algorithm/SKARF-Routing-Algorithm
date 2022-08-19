@@ -18,7 +18,7 @@ cmake --build build --target Routing --config Release
 
 You can download our preprocessed graph data as a folder called data from our [GoogleDrive](https://drive.google.com/drive/folders/1KUM74qZA9uC3vnbOFeFcUWTnsZufuuS1?usp=sharing) to an arbitrary location of your choice.
 
-Make sure to copy the path to your data folder into **data_directory.txt**.
+Make sure to copy the path to your data folder into a file called **data_directory.txt** located on the top level of the repository.
 The path must be relative to the root folder of the repository.
 
 ## Basic Usage

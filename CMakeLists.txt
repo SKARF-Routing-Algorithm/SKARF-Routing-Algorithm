@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.10)
+
+project(Routing)
+include_directories(include)
+file(GLOB SOURCES "src/*.cpp")
+add_executable(Routing ${SOURCES})
+target_compile_options(Routing INTERFACE -O3)
+target_link_libraries(Routing pthread)
+target_link_libraries(Routing ${CMAKE_CURRENT_SOURCE_DIR}/lib/libmetis.a)
+set_property(TARGET Routing PROPERTY CXX_STANDARD 17)
